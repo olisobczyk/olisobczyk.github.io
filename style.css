@@ -420,6 +420,30 @@ a:hover {
     margin-bottom: var(--spacing-md);
 }
 
+.project-title-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-title-link:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.github-icon {
+    font-size: 0.7em;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    vertical-align: super;
+}
+
+.project-title-link:hover .github-icon {
+    opacity: 1;
+    transform: translate(2px, -2px);
+}
+
 .project-short-desc {
     font-size: 0.95rem;
     color: var(--light-text);

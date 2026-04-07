@@ -1,4 +1,30 @@
 // ==========================================
+// PROJECT TOGGLE / SHOW MORE
+// ==========================================
+
+function toggleProjectDetails(button) {
+    // Find the parent project section
+    const projectSection = button.closest('.project-section');
+    const projectContent = projectSection.querySelector('.project-content');
+    
+    // Toggle the hidden class
+    projectContent.classList.toggle('hidden');
+    
+    // Update button text and state
+    if (projectContent.classList.contains('hidden')) {
+        button.textContent = 'Show More ▼';
+        button.classList.remove('active');
+        // Scroll to the project header
+        button.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+        button.textContent = 'Show Less ▲';
+        button.classList.add('active');
+        // Re-initialize lazy loading for newly visible images
+        initLazyLoading();
+    }
+}
+
+// ==========================================
 // LAZY LOADING IMAGES
 // ==========================================
 

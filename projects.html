@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Oliwier Sobczyk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Oliwier Sobczyk</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Featured Projects</h1>
+            <p>Explore my work across data analytics, AI automation, and technical problem-solving</p>
+        </div>
+    </section>
+
+    <!-- Project 1: CRM System -->
+    <section class="section project-section" id="crm-project">
+        <div class="container">
+            <div class="project-header">
+                <h2>CRM System & Operational Database Automation</h2>
+                <div class="project-meta">
+                    <span class="tag">Google Sheets</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Google Apps Script</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Claude & ChatGPT</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="project-text">
+                    <h3>The Challenge</h3>
+                    <p>Manufacturing service company lacked centralized data infrastructure. All financial transactions, operational logs, and customer interactions were recorded manually in notebooks, creating blind spots across the organization. Impossible to estimate customer costs, track monthly expenses, or evaluate profitability by project.</p>
+
+                    <h3>The Solution</h3>
+                    <p>Designed and implemented a relational database architecture in Google Sheets supporting customer management, order tracking, work scheduling, and financial analysis. Engineered 7+ automated workflows using Google Apps Script to eliminate manual reporting and streamline core business processes.</p>
+
+                    <h3>Key Achievements</h3>
+                    <ul class="achievements-list">
+                        <li><strong>Automated Processes:</strong> Customer cost reports, monthly operational summaries, employee expense tracking, client invoicing, daily backups, dynamic work scheduling</li>
+                        <li><strong>Database Architecture:</strong> Designed interconnected sheet structure eliminating data duplication while maintaining referential integrity across growing datasets</li>
+                        <li><strong>Optimization:</strong> Diagnosed and resolved performance bottlenecks through iterative refinement—replaced inefficient script-based solutions with embedded formulas to maintain system responsiveness as data volume increased</li>
+                        <li><strong>AI-Assisted Problem Solving:</strong> Used Claude and ChatGPT to debug complex formula logic and evaluate alternative implementation strategies</li>
+                        <li><strong>Business Impact:</strong> Financial turnover and profit-to-cost ratio <strong>doubled within 12 months</strong> of implementation</li>
+                    </ul>
+
+                    <h3>My Role</h3>
+                    <p>Solo architect and developer. Designed entire database schema, implemented all connections between files, wrote Google Apps Script automation logic, created formulas and queries, and trained team members on the system.</p>
+
+                    <h3>Impact Metrics</h3>
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <div class="metric-value">100%</div>
+                            <div class="metric-label">Profitability Increase</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">7+</div>
+                            <div class="metric-label">Automated Workflows</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">1 Year</div>
+                            <div class="metric-label">Time to Impact</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-images">
+                    <div class="image-placeholder">
+                        <img data-src="assets/crm-1.png" alt="CRM Database Architecture" class="lazy-image">
+                        <p class="image-caption">Figure 1: Database architecture & workflow diagram</p>
+                    </div>
+                    <div class="image-placeholder">
+                        <img data-src="assets/crm-2.png" alt="Automated Report Dashboard" class="lazy-image">
+                        <p class="image-caption">Figure 2: Sample automated report & dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 2: Energy Systems -->
+    <section class="section project-section alt" id="energy-project">
+        <div class="container">
+            <div class="project-header">
+                <h2>Offshore Wind Farm Techno-Economic Assessment</h2>
+                <div class="project-meta">
+                    <span class="tag">Python</span>
+                    <span class="tag">MATLAB</span>
+                    <span class="tag">Data Science</span>
+                    <span class="tag">ERA5 Data</span>
+                    <span class="tag">Financial Modeling</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="project-text">
+                    <h3>The Challenge</h3>
+                    <p>Assess technical feasibility and economic viability of a large-scale offshore wind farm in Greek waters—a region with significant wind potential but emerging regulatory framework and limited precedent. Required rigorous validation of wake modeling under Mediterranean conditions and comprehensive financial analysis accounting for capital constraints and market conditions.</p>
+
+                    <h3>The Solution</h3>
+                    <p>Conducted end-to-end techno-economic analysis combining meteorological data science, advanced wake modeling, and financial engineering. Processed 2.3GB of ERA5 hourly wind data (u/v velocity components at 10m and 100m heights) using Python, then implemented Jensen/PARK wake model in MATLAB to simulate turbine interactions and power generation across the full year.</p>
+
+                    <h3>Key Achievements</h3>
+                    <ul class="achievements-list">
+                        <li><strong>Data Engineering:</strong> Extracted, processed, and validated 2.3GB ERA5 meteorological dataset; converted NetCDF files to structured CSV using Python (NumPy, xarray)</li>
+                        <li><strong>Scientific Modeling:</strong> Implemented Jensen/PARK wake model from first principles, accounting for wind shear, air density variation, and turbine thrust dynamics</li>
+                        <li><strong>Validation:</strong> Proved model reliability for Greek maritime conditions; identified seasonal variability and wake loss patterns (14.03% annual mean)</li>
+                        <li><strong>Economic Analysis:</strong> Computed NPV (€5.46B), IRR (17.28%), and LCOE (€134/MWh) with sensitivity analysis identifying capital optimization as primary cost driver</li>
+                        <li><strong>Stakeholder Assessment:</strong> Analyzed ecosystem of actors and global precedents for successful project deployment</li>
+                        <li><strong>Key Finding:</strong> Project is both technically viable and financially attractive; 9,216 GWh annual energy production with 55.31% capacity factor</li>
+                    </ul>
+
+                    <h3>My Role</h3>
+                    <p>Independent researcher. Designed research methodology, extracted and processed all meteorological data, coded and debugged wake model, performed economic analysis, and synthesized interdisciplinary findings. 3-month project completed solo.</p>
+
+                    <h3>Impact Metrics</h3>
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <div class="metric-value">€5.46B</div>
+                            <div class="metric-label">Net Present Value</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">17.28%</div>
+                            <div class="metric-label">Internal Rate of Return</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">9,216 GWh</div>
+                            <div class="metric-label">Annual Energy Production</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">2.3 GB</div>
+                            <div class="metric-label">Data Processed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-images">
+                    <div class="image-placeholder">
+                        <img data-src="assets/energy-1.png" alt="Wind Farm Layout & Wake Effects" class="lazy-image">
+                        <p class="image-caption">Figure 1: Site layout with wake effects visualization</p>
+                    </div>
+                    <div class="image-placeholder">
+                        <img data-src="assets/energy-2.png" alt="Economic Analysis Results" class="lazy-image">
+                        <p class="image-caption">Figure 2: Economic results & sensitivity analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 3: Production System -->
+    <section class="section project-section" id="production-project">
+        <div class="container">
+            <div class="project-header">
+                <h2>Production System Planning & Factory Layout Optimization</h2>
+                <div class="project-meta">
+                    <span class="tag">visTABLE</span>
+                    <span class="tag">Operations Design</span>
+                    <span class="tag">Cost Analysis</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="project-text">
+                    <h3>The Challenge</h3>
+                    <p>Design efficient production facility layout balancing material flows, machine utilization, operational costs, and workspace constraints for a buggy vehicle assembly operation.</p>
+
+                    <h3>The Solution</h3>
+                    <p>Conducted comprehensive factory design analysis using visTABLE, mapping material flows, machine working times, and operational costs. Developed optimized production and auxiliary space layouts to maximize throughput while minimizing waste and idle time.</p>
+
+                    <h3>Key Achievements</h3>
+                    <ul class="achievements-list">
+                        <li>Designed material flow network across production stages</li>
+                        <li>Analyzed machine utilization and cycle time optimization</li>
+                        <li>Evaluated production and auxiliary space requirements</li>
+                        <li>Compared multiple layout variants on cost and efficiency criteria</li>
+                        <li>Delivered actionable recommendations for facility setup</li>
+                    </ul>
+                </div>
+
+                <div class="project-images">
+                    <div class="image-placeholder">
+                        <img data-src="assets/production-1.png" alt="Factory Layout Design" class="lazy-image">
+                        <p class="image-caption">Figure 1: Factory layout diagram</p>
+                    </div>
+                    <div class="image-placeholder">
+                        <img data-src="assets/production-2.png" alt="Material Flow & Cost Analysis" class="lazy-image">
+                        <p class="image-caption">Figure 2: Material flow & cost analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Projects Section (for future smaller projects) -->
+    <section class="section smaller-projects">
+        <div class="container">
+            <h2>Additional Projects</h2>
+            <p>Coming soon: smaller projects and technical explorations</p>
+            <div class="projects-grid" id="smaller-projects-container">
+                <!-- Smaller projects will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>Interested in discussing data analytics, AI solutions, or technical collaboration?</p>
+            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 <a href="mailto:contact.oliwier.business@gmail.com">contact.oliwier.business@gmail.com</a></p>
+                    <p>📱 <a href="tel:+48698770314">+48 698 770 314</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <p><a href="https://linkedin.com/in/oliwier-sobczyk" target="_blank">LinkedIn</a></p>
+                    <p><a href="https://github.com/oliwiersobczyk" target="_blank">GitHub</a></p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="projects.html">Projects</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Oliwier Sobczyk. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

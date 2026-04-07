@@ -10,15 +10,15 @@ function toggleProjectDetails(button) {
     // Toggle the hidden class
     projectContent.classList.toggle('hidden');
     
-    // Update button text and state
+    // Update button text and display style
     if (projectContent.classList.contains('hidden')) {
         button.textContent = 'Show More ▼';
         button.classList.remove('active');
-        // Scroll to the project header
-        button.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        projectContent.style.display = 'none';
     } else {
         button.textContent = 'Show Less ▲';
         button.classList.add('active');
+        projectContent.style.display = 'grid';
         // Re-initialize lazy loading for newly visible images
         initLazyLoading();
     }

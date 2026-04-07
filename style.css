@@ -420,10 +420,6 @@ a:hover {
     margin-bottom: var(--spacing-md);
 }
 
-.project-header h2 {
-    margin-bottom: var(--spacing-md);
-}
-
 .project-short-desc {
     font-size: 0.95rem;
     color: var(--light-text);

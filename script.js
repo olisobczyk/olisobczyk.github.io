@@ -96,17 +96,20 @@ function updateActiveNavLink() {
 
 document.addEventListener('click', function(e) {
     // Check if the clicked element is a link with an anchor
-    if (e.target.tagName === 'A' && e.target.getAttribute('href').startsWith('#')) {
-        e.preventDefault();
-        
-        const targetId = e.target.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+    if (e.target.tagName === 'A') {
+        const href = e.target.getAttribute('href');
+        if (href && href.startsWith('#')) {
+            e.preventDefault();
+            
+            const targetId = href.substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
     }
 });

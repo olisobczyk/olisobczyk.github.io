@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Featured projects by Oliwier Sobczyk – CRM database automation, offshore wind farm analysis, and factory layout optimization.">
+    <meta name="description" content="Featured projects by Oliwier Sobczyk – CRM database automation, offshore wind farm analysis, factory layout optimization, and AI-powered financial assistant.">
     <title>Projects | Oliwier Sobczyk</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -192,6 +192,68 @@
                     <div class="image-placeholder">
                         <img data-src="assets/production-2.png" alt="Material Flow & Cost Analysis" class="lazy-image">
                         <p class="image-caption">Figure 2: Material flow & cost analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 4: AI Financial Assistant -->
+    <section class="section project-section alt" id="ai-financial-project">
+        <div class="container">
+            <div class="project-header">
+                <h2><a href="https://github.com/olisobczyk/portfolio-projects/tree/main/ai-python-financial-analyst" target="_blank" class="project-title-link">AI-Powered Python Financial Assistant <span class="github-icon">↗</span></a></h2>
+                <p class="project-short-desc">Python | NeuralIntents | pandas-datareader | mplfinance | pickle<br><strong>Impact:</strong> End-to-end conversational AI assistant for real-time portfolio management and market visualisation</p>
+
+                <button class="project-toggle" onclick="toggleProjectDetails(this)">Show More ▼</button>
+            </div>
+
+            <div class="project-content hidden" style="display:none;">
+                <div class="project-text">
+                    <h3>The Challenge</h3>
+                    <p>Build an intelligent, conversational interface for personal portfolio management and stock market analysis — without hardcoding every possible user phrase. The assistant needed to understand natural language intent, fetch live financial data, and persist portfolio state across sessions, all from the command line.</p>
+
+                    <h3>The Solution</h3>
+                    <p>Developed a modular CLI application using the NeuralIntents library to train a custom intent-classification model on a curated set of financial conversation patterns. Integrated pandas-datareader and yfinance (as an automatic fallback) for live Yahoo Finance data, and mplfinance for styled candlestick charting. Portfolio state is serialised with pickle for persistence between runs.</p>
+
+                    <h3>Key Achievements</h3>
+                    <ul class="achievements-list">
+                        <li><strong>NLP Intent Engine:</strong> Trained a neural network on 8 intent categories and ~60 labelled patterns covering greetings, charting, portfolio CRUD, valuation, and performance analysis</li>
+                        <li><strong>Live Market Data:</strong> Fetches real-time OHLCV data from Yahoo Finance with automatic yfinance fallback to handle API instability — transparent to the user</li>
+                        <li><strong>Portfolio Analytics:</strong> Real-time total valuation across all holdings; historical gain/loss comparison against any user-specified date with absolute and relative return metrics</li>
+                        <li><strong>Candlestick Charting:</strong> Styled dark-theme charts with custom bull/bear colours and volume overlay via mplfinance</li>
+                        <li><strong>Clean Architecture:</strong> Separated concerns across four modules (NLP layer, intent handlers, market data, portfolio persistence) for maintainability and extensibility</li>
+                        <li><strong>Model Caching:</strong> Saves trained model weights to disk; <code>--load</code> flag skips retraining on subsequent runs for 5–10× faster startup</li>
+                    </ul>
+
+                    <h3>My Role</h3>
+                    <p>Solo developer. Reconstructed and extended the project from a tutorial transcript, applied production-quality engineering practices (type hints, error handling, fallback data sources, input validation), and structured the codebase for long-term maintainability.</p>
+
+                    <h3>Impact Metrics</h3>
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <div class="metric-value">8</div>
+                            <div class="metric-label">Intent Categories</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">4</div>
+                            <div class="metric-label">Modules</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">2x</div>
+                            <div class="metric-label">Data Source Redundancy</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-images">
+                    <div class="image-placeholder">
+                        <img data-src="assets/ai-financial-1.png" alt="Financial Assistant CLI Session" class="lazy-image">
+                        <p class="image-caption">Figure 1: CLI session — portfolio query and live valuation</p>
+                    </div>
+                    <div class="image-placeholder">
+                        <img data-src="assets/ai-financial-2.png" alt="Candlestick Chart Output" class="lazy-image">
+                        <p class="image-caption">Figure 2: Styled candlestick chart with volume overlay</p>
                     </div>
                 </div>
             </div>
